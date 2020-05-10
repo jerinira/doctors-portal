@@ -1,0 +1,17 @@
+.nav {
+    display: flex;
+    background: inherit;
+    padding-right: 30px;
+    list-style: none;
+    justify-content: flex-end;
+    align-items: center;
+    
+  }
+  .nav-item {
+    text-decoration: none;
+    padding: 35px;
+    color: wheat;
+    font-size: 18px;
+    font-size: 18px;
+    mix-blend-mode: difference;
+  }

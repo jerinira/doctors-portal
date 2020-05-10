@@ -1,0 +1,54 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.homeContainer {
+  background: linear-gradient(to right, #ffffff 60%, #3a4256 40%);
+  margin: 0;
+  height: 100vh;
+}
+
+.home-left {
+  background-size: contain;
+  position: relative;
+  background-repeat: no-repeat;
+  background-image: url("../../images/Mask\ Group\ 2.png");
+  background-blend-mode: darken;
+  width: 60vw;
+  height: 75vh;
+  /* background-color: #3a4256; */
+}
+.home-left-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  padding: 10% 20%;
+  text-align: left;
+}
+.appointment-button {
+  background: linear-gradient(to right, #19d3ae 10%, #0fcfec 90%);
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 5%;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+.btnSmall {
+  background: linear-gradient(to right, #19d3ae 10%, #0fcfec 90%);
+  color: #ffffff;
+  padding: 5px;
+  border-radius: 5%;
+  text-decoration: none;
+}
+.home-img-right {
+  height: 350px;
+  width: 600px;
+  position: absolute;
+  top: 150px;
+  right: 30px;
+}

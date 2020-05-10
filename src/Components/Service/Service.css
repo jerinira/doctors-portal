@@ -1,0 +1,21 @@
+.service-card-holder {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .serviceCard {
+    height: 25vmin;
+    flex-basis: 29%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    padding: 2% 1%;
+    margin: 1%;
+    box-shadow: 5px 5px 10px #8b8888;
+  }
+  
+  .serviceCard h2,
+  .serviceCard h3 {
+    font-family: "Raleway", sans-serif;
+    margin: 0px;
+  }
