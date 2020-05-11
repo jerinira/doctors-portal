@@ -1,39 +1,33 @@
 const services=[
     {
         serviceName: "Teeth Orthodontics",
-        startTime: "8:00 AM - 9:00 AM",
-        endTime: "8:30 AM",
-        seatAvailable: 10,
+        time: "8:00 AM - 9:00 AM",
+        seatAvailable: 10
       },
       {
         serviceName: "Cometic Dentistry",
-        startTime: "10.05AM - 11.30AM",
-        endTime: "8:30 AM",
-        seatAvailable: 10,
+        time: "10.05AM - 11.30 AM",
+        seatAvailable: 10
       },
       {
         serviceName: "Teeth Cleaning",
-        startTime: "5:00 PM - 6:30 PM",
-        endTime: "8:30 AM",
-        seatAvailable: 10,
+        time: "5:00 PM - 6:30 PM",
+        seatAvailable: 10
       },
       {
         serviceName: "Cavity Protection",
-        startTime: "7:00 am - 8:30 AM",
-        endTime: "8:30 AM",
-        seatAvailable: 10,
+        time: "7:00 AM - 8:30 AM",
+        seatAvailable: 10
       },
       {
-        serviceName: "Teeth Feeling ",
-        startTime: "8:00 AM - 9:00 AM",
-        endTime: "8:30 AM",
-        seatAvailable: 10,
+        serviceName: "Cosmetic Tooth Filling ",
+        time: "8:30 AM - 9:30 AM",
+        seatAvailable: 10
       },
       {
-        serviceName: "Route Canal",
-        startTime: "8:00 AM - 9:00 AM",
-        endTime: "8:30 AM",
-        seatAvailable: 10,
+        serviceName: "Tooth Impactions",
+        time: "8:00 AM - 9:00 AM",
+        seatAvailable: 10
       }
 ];
 export default services;

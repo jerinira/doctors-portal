@@ -19,7 +19,6 @@ body {
   background-blend-mode: darken;
   width: 60vw;
   height: 75vh;
-  /* background-color: #3a4256; */
 }
 .home-left-text {
   display: flex;
@@ -30,7 +29,7 @@ body {
   text-align: left;
 }
 .appointment-button {
-  background: linear-gradient(to right, #19d3ae 10%, #0fcfec 90%);
+  background: linear-gradient(to right, #19d3ae 30%, #0fcfec 70%);
   color: #ffffff;
   padding: 10px;
   border-radius: 5%;
@@ -38,14 +37,8 @@ body {
   cursor: pointer;
   font-size: 1.2rem;
 }
-.btnSmall {
-  background: linear-gradient(to right, #19d3ae 10%, #0fcfec 90%);
-  color: #ffffff;
-  padding: 5px;
-  border-radius: 5%;
-  text-decoration: none;
-}
-.home-img-right {
+
+.rightSide-img {
   height: 350px;
   width: 600px;
   position: absolute;

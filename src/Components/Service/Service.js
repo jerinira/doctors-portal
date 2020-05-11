@@ -1,32 +1,22 @@
 import React, { useState } from 'react';
 import './Service.css';
+import AppointmentBook from '../AppointmentBook/AppointmentBook';
 
-import serviceData from '../../fakeData/index';
-import { Link } from 'react-router-dom';
+const Service = (props) => {
+    //console.log(props);
 
-const Service = () => {
-    const [appointment, setAppointment]=useState(serviceData);
-    // const appointment= serviceData;
-    console.log(appointment);
+    const { serviceName ,seatAvailable,time } = props.service;
+    //console.log(serviceName);
     return (
-        <div>
-        <div className='row service-card-holder d-flex justify-content-around'>
-            {
-                appointment.map(appointment=>
-                    <div className="serviceCard col-lg-3">
-                        <h4 style={{ color: "#19D3AC"}}> {appointment.serviceName}</h4> 
-                        <h5> {appointment.seatAvailable}-{appointment.endTime}</h5>
-                            <p className="card-text text-muted">{appointment.seatAvailable} SPACES AVAILABLE</p>
-                            <Link to='/add'>
-                            <button className='appointment-button'>
-                            BOOK APPOINTMENT</button></Link>
-                    </div>
-                )
-            }
-
-        </div>
-
-        </div>
+        
+      <div className="serviceCard ">
+      <h4 style={{ color: "#19D3AC" }}>{serviceName}</h4>
+      <h5>{time}</h5>
+      <p className="card-text text-muted">{seatAvailable} SPACES AVAILABLE</p>
+       <AppointmentBook
+        date={props.date}
+        serviceDetails={props.service}></AppointmentBook> 
+    </div>
     );
 };
 

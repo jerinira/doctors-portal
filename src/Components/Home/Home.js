@@ -11,7 +11,7 @@ const Home = () => {
         <div className="homeContainer">
       <Nav></Nav>
       <img
-        className="home-img-right"
+        className="rightSide-img"
         src={image1}
         alt="Display Chair"/>
       <div className="home-left">

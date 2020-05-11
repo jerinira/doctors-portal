@@ -3,6 +3,8 @@ import './App.css';
 import Home from './Components/Home/Home';
 import {BrowserRouter as Router,Route, Switch } from "react-router-dom";
 import Appointment from './Components/Appointment/Appointment';
+import AppointmentBook from './Components/AppointmentBook/AppointmentBook';
+import Form from './Components/Form/Form';
 
 function App() {
 
@@ -17,6 +19,10 @@ function App() {
           <Appointment></Appointment>
         </Route>
         </Switch>
+        <Route path='/book'>
+          <AppointmentBook></AppointmentBook>
+        </Route>
+        <Route exact path="/addAppointment" component={AppointmentBook} />
       </Router>
      
     </div>

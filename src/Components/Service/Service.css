@@ -1,6 +1,7 @@
 .service-card-holder {
     display: flex;
     flex-flow: row wrap;
+    padding:30px;
   }
   .serviceCard {
     height: 25vmin;
@@ -9,7 +10,7 @@
     align-items: center;
     justify-content: space-around;
     display: flex;
-    padding: 2% 1%;
+    padding: 1% 1%;
     margin: 1%;
     box-shadow: 5px 5px 10px #8b8888;
   }

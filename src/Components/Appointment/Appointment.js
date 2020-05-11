@@ -3,14 +3,18 @@ import './Appointment.css';
 import Calendar from 'react-calendar';
 import "react-calendar/dist/Calendar.css";
 import Nav from '../Nav/Nav';
+import image1 from '../../images/Mask Group 1.png'
 import Service from '../Service/Service';
+import serviceData from '../../fakeData';
 
 const Appointment = () => {
     const [date, setDate] = useState(new Date());
 
   const dateChange = (date) =>{ setDate(date);
-  console.log(date);
-  }
+  console.log(date);}
+  const showAllServices = serviceData.map((service) => (
+    <Service date={date} service={service}></Service>
+  ));
 
     return (
         <div>
@@ -21,9 +25,9 @@ const Appointment = () => {
         <div className="appointment-calender">
           <Calendar minDate={new Date()} onChange={dateChange} value={date} />
           <img
-            className="home-img-right"
-            src={require("../../images/Mask Group 1.png")}
-            alt="patient-Chair"
+            className="rightSide-img"
+            src={image1}
+            alt=""
           />
         </div>
         </div>
@@ -33,7 +37,7 @@ const Appointment = () => {
           {new Date(date).toLocaleString("en-us", { month: "long" })}{" "}
           {date.getDate()}, {date.getUTCFullYear()}
         </h1>
-        <Service></Service>
+        <div className="service-card-holder">{showAllServices}</div>
         </div>
         </div>
     );
