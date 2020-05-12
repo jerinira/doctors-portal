@@ -4,7 +4,7 @@ import Home from './Components/Home/Home';
 import {BrowserRouter as Router,Route, Switch } from "react-router-dom";
 import Appointment from './Components/Appointment/Appointment';
 import AppointmentBook from './Components/AppointmentBook/AppointmentBook';
-import Form from './Components/Form/Form';
+import PatientList from './Components/PatientList/PatientList';
 
 function App() {
 
@@ -18,6 +18,9 @@ function App() {
         <Route path='/appointment'>
           <Appointment></Appointment>
         </Route>
+        <Route path='/patientList'>
+          <PatientList>
+            </PatientList>        </Route>
         </Switch>
         <Route path='/book'>
           <AppointmentBook></AppointmentBook>

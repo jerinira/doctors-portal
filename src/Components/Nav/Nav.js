@@ -23,6 +23,9 @@ const Nav = () => {
       <Link className="nav-item" to="">
         Contact Us
       </Link>
+      <Link className="nav-item" to="/doctor/AllAppointments">
+        Doctor's Login
+      </Link>
       
     </div>
     );

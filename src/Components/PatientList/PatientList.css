@@ -1,0 +1,12 @@
+.list-container{
+    display: flex;
+}
+.calender-container{
+    width: 50%;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+.heading{
+    text-align: center;
+     color: #19D3AE ;
+}

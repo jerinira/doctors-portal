@@ -5,7 +5,7 @@
   background: url("../../images/Mask\ Group\ 2.png") no-repeat;
   background-size: contain;
 }
-.appointment-calender {
+.calender-div {
   height: 80vh;
   width: 60vw;
   display: flex;

@@ -22,8 +22,8 @@ const Appointment = () => {
             <div className="appointment-nav">
           <Nav></Nav>
         </div>
-        <div className="appointment-calender">
-          <Calendar minDate={new Date()} onChange={dateChange} value={date} />
+        <div className="calender-div">
+          <Calendar minDate={new Date()} handleDateChange={dateChange} value={date} />
           <img
             className="rightSide-img"
             src={image1}
