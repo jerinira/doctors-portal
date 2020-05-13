@@ -59,7 +59,7 @@ const PatientList = () => {
   ];
 
   return (
-    <div>
+    <div style={{margin:'40px'}}>
 
       <h1 className='heading'>
         Please Select the Date to Find Patient List

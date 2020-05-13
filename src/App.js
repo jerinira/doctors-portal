@@ -5,6 +5,7 @@ import {BrowserRouter as Router,Route, Switch } from "react-router-dom";
 import Appointment from './Components/Appointment/Appointment';
 import AppointmentBook from './Components/AppointmentBook/AppointmentBook';
 import PatientList from './Components/PatientList/PatientList';
+import AllAppointment from './Components/AllAppointment/AllAppointment';
 
 function App() {
 
@@ -15,17 +16,19 @@ function App() {
         <Route exact path='/'>
         <Home></Home>
         </Route>
-        <Route path='/appointment'>
+        <Route exact path='/appointment'>
           <Appointment></Appointment>
         </Route>
-        <Route path='/patientList'>
-          <PatientList>
-            </PatientList>        </Route>
-        </Switch>
-        <Route path='/book'>
-          <AppointmentBook></AppointmentBook>
+        <Route exact path='/doctor/patientList'>
+          <PatientList/>       
+          </Route>
+        <Route exact path='/bookAppointment'>
+          <AppointmentBook/>
         </Route>
-        <Route exact path="/addAppointment" component={AppointmentBook} />
+        <Route exact path='/allList'>
+          <AllAppointment/>
+        </Route>
+        </Switch>
       </Router>
      
     </div>

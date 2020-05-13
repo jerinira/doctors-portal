@@ -23,7 +23,7 @@ const Nav = () => {
       <Link className="nav-item" to="">
         Contact Us
       </Link>
-      <Link className="nav-item" to="/doctor/AllAppointments">
+      <Link className="nav-item" to="/doctor/patientList">
         Doctor's Login
       </Link>
       
