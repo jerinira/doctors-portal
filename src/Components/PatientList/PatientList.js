@@ -4,6 +4,8 @@ import "react-table-6/react-table.css";
 import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
 import './PatientList.css'
+import { Link } from 'react-router-dom';
+import { Button } from '@material-ui/core';
 
 
 
@@ -17,7 +19,7 @@ const PatientList = () => {
 
 
   useEffect(() => {
-    fetch("http://localhost:4000/allAppointment")
+    fetch("https://morning-harbor-96274.herokuapp.com/allAppointment")
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
@@ -33,20 +35,20 @@ const PatientList = () => {
       date.getDate() + "-" + (date.getMonth() + 1) + "-" + date.getFullYear()
   );
 
- // console.log(tableData);
+  // console.log(tableData);
 
   const tableColumns = [
     { Header: "Name", accessor: "patientName", width: 300 },
-    { Header: "Schedule", accessor: "time", width: 200 },
+    { Header: "Time", accessor: "time", width: 200 },
     {
       Header: "Action",
       Cell: (props) => {
-        
+
         return (
           <>
             <select className="appointment-button">
               <option value="pending">Pending</option>
-              <option value="sone">Done</option>
+              <option value="done">Done</option>
               <option value="Cancelled">Cancelled</option>
             </select>
           </>
@@ -59,7 +61,7 @@ const PatientList = () => {
   ];
 
   return (
-    <div style={{margin:'40px'}}>
+    <div style={{ margin: '40px' }}>
 
       <h1 className='heading'>
         Please Select the Date to Find Patient List
@@ -75,20 +77,27 @@ const PatientList = () => {
         <div className="calender-container">
 
           <div className="calender-div">
-            <Calendar handleDateChange={handleDateChange} value={date} />
+            <Calendar onChange={handleDateChange} value={date} />
+
+
           </div>
         </div>
         <div className="cart-container">
           <h4>Appointments</h4>
-          <ReactTable
+          <ReactTable className='d-flex align-items-center'
             data={tableData}
             columns={tableColumns}
-            defaultPageSize={10}>
+            defaultPageSize={6}>
 
-            </ReactTable>
+          </ReactTable>
 
         </div>
       </div>
+
+      <Link className='text-link' path to='/doctor/allList' style={{ textDecoration: 'none', color: 'inherit' }}>
+        <Button className='appointment-button'>See all List...
+      </Button>
+      </Link>
     </div>
 
   );

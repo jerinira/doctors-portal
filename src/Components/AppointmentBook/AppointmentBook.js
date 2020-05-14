@@ -30,7 +30,7 @@ const AppointmentBook = (props) => {
 
     //ADD TO DataBase
 
-    fetch("http://localhost:4000/addAppointment", {
+    fetch("https://morning-harbor-96274.herokuapp.com/addAppointment", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
